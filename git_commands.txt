@@ -1,0 +1,22 @@
+PS C:\Users\student> cd
+PS C:\Users\student> cd ~
+PS C:\Users\student> mkdir Cviceni6
+PS C:\Users\student> cd Cviceni6
+PS C:\Users\student\Cviceni6> git clone https://github.com/kotoudom/kotouckova.git
+PS C:\Users\student\Cviceni6> cd kotouckova
+PS C:\Users\student\Cviceni6\kotouckova> ls
+
+PS C:\Users\student\Cviceni6\kotouckova> git checkout -b develop
+
+PS C:\Users\student\Cviceni6\kotouckova> New-Item test.txt -ItemType File
+PS C:\Users\student\Cviceni6\kotouckova> Set-Content text.txt "test"
+PS C:\Users\student\Cviceni6\kotouckova> git config --global user.name "Dominika Viktorie Kotouckova"
+PS C:\Users\student\Cviceni6\kotouckova> git config --global user.email "kotoudom@cvut.cz"
+PS C:\Users\student\Cviceni6\kotouckova> git config --global --list
+PS C:\Users\student\Cviceni6\kotouckova> git commit -m "soubor test.txt vevetvi develop"
+PS C:\Users\student\Cviceni6\kotouckova> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\student\Cviceni6\kotouckova> notepad README.md
+PS C:\Users\student\Cviceni6\kotouckova> git add README.md
+PS C:\Users\student\Cviceni6\kotouckova> git commit -m "readme upravny s kodem predmetu"
